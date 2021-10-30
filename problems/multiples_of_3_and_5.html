@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiples Of 3 or 5</title>
+    <link rel="stylesheet" href="/css/multiples_of_3_and_5.css">
+    <link rel="stylesheet" href="/css/custom_scrol.css">
+    <link rel="shortcut icon" href="/images/MP.png">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/javascript/multiples_of_3_and_5.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo"><a href="#"><img src="/images/MP.png" alt=""></a></div>
+            <ul class="menu">
+                <li><a href="/index.html" target="_blank">Home</a></li>
+                <li><a href="/problemset.html" target="_blank">Problemset</a></li>
+                <li><a href="/problems/some_platforms.html" target="_blank">Some Online Platforms</a></li>
+            </ul>
+        </div>
+    </nav> 
+
+    <!--Home section===========================================================-->
+    <section class="home">
+        <div class="max-width">
+            <div class="home-content">
+                <div class="text">Multiples of <span>3 or 5</span></div>
+                <a href="#problem">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    Solve It!
+                </a>
+            </div>
+        </div>
+    </section>
+    <!--=======================================================================-->
+
+    <!--problem section ======================================================================================================================================-->
+
+    <section class="problem" id="problem">
+        <div class="max-width">
+            <h2>Problem Statment</h2>
+            <p>
+                If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23. 
+                Find the sum of all the multiples of 3 or 5 below 1000.
+            </p>
+            <div class="solution-container">
+                <h2>Your Solution</h2>
+                <form>
+                    <div class="input-field">
+                        <input id="answer" type="text" required="">
+                        <label>Please enter the solution here</label>
+                        <span></span>
+                    </div>
+                    <input onclick="fct()" type="submit" value="Submit Solution" class="btn">
+                </form>
+            </div>
+            <p id="message" class="answerVerdict"></p>
+            <a id="correctBtn" href="/problemset.html" class="btnverdict">Try Another Problem</a>
+            <a id="incorrectBtn" href="/problems/multiples_of_3_and_5.html" class="btnverdict">Try Again</a>
+        </div>
+    </section>
+</body>
+</html>

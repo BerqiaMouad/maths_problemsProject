@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+
+*{
+    margin: 0;
+    text-decoration: none;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+/*style for navbar====================================*/
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding: 5px 0;
+    transition: all 0.5s ease;
+}
+
+.navbar.sticky{
+    padding: 5px 0;
+    background: #111;
+}
+.navbar .max-width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo img{
+    width: 70px;
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a{
+    display: block;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 550;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+.navbar .menu li a:hover{
+    color: rgb(109, 98, 206);
+}
+/*==================================*/
+
+/*home section======================*/
+.home{
+    display: flex;
+    background: rgba(0, 0, 0, .7) url("/images/Home_bg.jpg") no-repeat center;
+    background-size: cover;
+    background-blend-mode: darken;
+    height: 100vh;
+    color: #fff;
+    min-height: 500px;
+}
+.home .max-width{
+    margin-top: auto;
+    margin-left: auto;
+}
+.home .home-content .text-1{
+    font-size: 27px;
+    text-align: center;
+}
+.home .home-content .text-2{
+    font-size: 75px;
+    font-weight: 600;
+}
+
+.home .home-content .text-3{
+    font-size: 35px;
+    margin: 5px 0;
+    text-align: center;
+}
+.home .home-content .text-3 a{
+    color: rgb(109, 98, 206);
+    font-weight: 500;
+    transition: 0.5s ease;
+}
+.home .home-content .text-3 a:hover{
+    color: #fff;
+    padding: 5px 10px;
+    background: rgb(109, 98, 206);
+}
+/*====================================*/
+
+section{
+    padding: 100px 0;
+}
+
+/*decription section=========================*/
+.description .description-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.description .description-content .left{
+    width: 45%;
+}
+
+.description .description-content .left img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+}
+
+.description .description-content .right{
+    width: 55%;
+}
+
+.description .description-content .right .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.description .description-content .right .text span{
+    color: rgb(109, 98, 206);
+}
+
+.description .description-content .right p{
+    text-align: justify;
+}
+
+.description .description-content .right a{
+    margin-top: 20px;
+    position: relative;
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.4);
+    background: rgb(109, 98, 206);
+    letter-spacing: 2px;
+    font-size: 16px;
+    transition: 0.3s ease;
+}
+
+.description .description-content .right a:hover{
+    color: #fff;
+}
+
+.description .description-content .right a span{
+    display: block;
+    position: absolute;
+    background: #111;
+}
+
+.description .description-content .right a span:nth-child(1){
+    left: 0;
+    bottom: 0;
+    width: 2px;
+    height: 100%;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.5s ease;
+}
+
+.description .description-content .right a:hover span:nth-child(1){
+    transform: scaleY(1);
+    transform-origin: bottom;
+    transition: transform 0.5s ease;
+}
+
+.description .description-content .right a span:nth-child(2){
+    left: 0;
+    bottom: 0;
+    width: 99%;
+    height: 2px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s ease;
+}
+
+.description .description-content .right a:hover span:nth-child(2){
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: transform 0.5s ease;
+}
+
+.description .description-content .right a span:nth-child(3){
+    right: 0;
+    bottom: 0;
+    width: 2px;
+    height: 100%;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.5s ease;
+}
+
+.description .description-content .right a:hover span:nth-child(3){
+    transform: scaleY(1);
+    transform-origin: bottom;
+    transition: transform 0.5s ease;
+}
+
+.description .description-content .right a span:nth-child(4){
+    left: 0;
+    top: 0;
+    width: 99%;
+    height: 2px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s ease;
+}
+
+.description .description-content .right a:hover span:nth-child(4){
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: transform 0.5s ease;
+}
+/*=====================================================================*/

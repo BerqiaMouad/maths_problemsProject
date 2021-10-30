@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Digits Replacement</title>
+    <link rel="stylesheet" href="/css/prime_digits_replacements.css">
+    <link rel="stylesheet" href="/css/custom_scrol.css">
+    <link rel="shortcut icon" href="/images/MP.png">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/javascript/prime_digits_replacements.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo"><a href="#"><img src="/images/MP.png" alt=""></a></div>
+            <ul class="menu">
+                <li><a href="/index.html" target="_blank">Home</a></li>
+                <li><a href="/problemset.html" target="_blank">Problemset</a></li>
+                <li><a href="/problems/some_platforms.html" target="_blank">Some Online Platforms</a></li>
+            </ul>
+        </div>
+    </nav> 
+
+    <!--Home section===========================================================-->
+    <section class="home">
+        <div class="max-width">
+            <div class="home-content">
+                <div class="text">Prime Digits <span>Replacement</span></div>
+                <a href="#problem">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    Solve It!
+                </a>
+            </div>
+        </div>
+    </section>
+    <!--=======================================================================-->
+
+    <!--problem section ======================================================================================================================================-->
+
+    <section class="problem" id="problem">
+        <div class="max-width">
+            <h2>Problem Statment</h2>
+            <p>
+                By replacing the 1st digit of the 2-digit number *3, it turns out that six of the nine possible values: 13, 23, 43, 53, 73, and 83, are all prime.<br>
+                By replacing the 3rd and 4th digits of 56**3 with the same digit, this 5-digit number is the first example having seven primes among the ten generated numbers, yielding the family: 56003, 56113, 56333, 56443, 56663, 56773, and 56993. Consequently 56003, being the first member of this family, is the smallest prime with this property. <br>
+                Find the smallest prime which, by replacing part of the number (not necessarily adjacent digits) with the same digit, is part of an eight prime value family.
+            </p>
+            <div class="solution-container">
+                <h2>Your Solution</h2>
+                <form>
+                    <div class="input-field">
+                        <input id="answer" type="text" required="">
+                        <label>Please enter the solution here</label>
+                        <span></span>
+                    </div>
+                    <input onclick="fct()" type="submit" value="Submit Solution" class="btn">
+                </form>
+            </div>
+            <p id="message" class="answerVerdict"></p>
+            <a id="correctBtn" href="/problemset.html" class="btnverdict">Try Another Problem</a>
+            <a id="incorrectBtn" href="/problems/prime_digits_replacements.html" class="btnverdict">Try Again</a>
+        </div>
+    </section>
+</body>
+</html>
